@@ -1,0 +1,39 @@
+alerts:
+  enabled: true
+
+checks:
+  killaura:
+    broadcast-to-all: true
+    max-vl: 10
+    auto-reduce:
+      interval: 150000
+      amount: 1
+    punishment-command: "msg %player% %check%"
+    send-actionbar-to-player: true
+    actionbar-message: "&f❀ &eKaro &7→ &fDetected &c%check%"
+
+progress-bar:
+  enabled: true
+  filled-character: "♥"
+  empty-character: "♥"
+  filled-color: "&c"
+  empty-color: "&7"
+  separator: "&f/"
+  length: 10
+
+punishment-effects:
+  lightning:
+    enabled: true
+    damage: false
+
+client-info:
+  enabled: true
+  messages:
+    - "&7[&eKaro&7] &fPlayer &b%player% &fjoined the server"
+    - "&7[&eKaro&7] &fClient: &b%client_name% &f(Version: &b%client_version%&f)"
+    - "&7[&eKaro&7] &fProtocol: &b%protocol_version% &f| UUID: &b%uuid%"
+    - "&7[&eKaro&7] &fIP: &b%ip% &f| World: &b%world%"
+
+messages:
+  alert-message: "&eKaro &7| &f%player% failed &b%check% &7(%progress_bar% %current_vl%%separator%%max_vl%)"
+  punishment-broadcast: "&eKaro &7| &f%player% has been punished for %check% violation!"

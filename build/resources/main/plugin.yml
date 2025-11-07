@@ -1,0 +1,7 @@
+name: KaroAntiCheat
+version: '1.0.0'
+main: eternalpolar.spigot.karoanticheat.KaroAntiCheat
+depend: [ProtocolLib]
+commands:
+  karo:
+    description: A command for Forize AntiCheat
